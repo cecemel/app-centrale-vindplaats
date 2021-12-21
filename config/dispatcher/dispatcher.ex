@@ -41,6 +41,10 @@ defmodule Dispatcher do
     forward conn, [], "http://frontend/sparql"
   end
 
+  post "/sparql", %{ layer: :sparql, accept: %{ any: true } } do
+    forward conn, [], "http://virtuoso:8890/sparql"
+  end
+
   match "/sparql", %{ layer: :sparql, accept: %{ sparql: true } } do
     forward conn, [], "http://virtuoso:8890/sparql"
   end
