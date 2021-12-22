@@ -64,6 +64,7 @@ defmodule Acl.UserGroups.Config do
                         "http://publications.europa.eu/resource/distribution/eli/owl/owl/eli.owl/#LegalResourceSubdivision",
                         "http://data.vlaanderen.be/ns/generiek#Versie",
                         "http://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd",
+                        "http://purl.org/vocab/cpsv#PublicService"
                       ]
                     } } ] },
 
